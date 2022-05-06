@@ -1,0 +1,129 @@
+@import url(normalize.css);
+
+.title-standart{
+    font-size: 35px;
+    font-style: italic;
+}
+
+html{
+    background: linear-gradient(to right,#E6E617,#9A9A3D,#F6F69C,#F6F662,#7B7B04,);
+}
+
+.header{
+    &__title{
+        @extend .title-standart;
+        text-align: center;
+    }
+}
+
+.nav{
+    float: left;
+    &__list{
+       list-style-type: none;
+       padding-left: 2rem;
+    }
+    &__elem a{
+        text-decoration: none;
+        color: grey;
+        font-size: 20px;
+    }
+    &__elem a:hover{
+        color: black;
+    }
+}
+
+.biography, .main{
+    &__title{
+        @extend .title-standart;
+        text-align: center;
+    }
+    &__image{
+       padding-left: 45rem;
+    }
+}
+
+.hobby{
+    &__title{
+        @extend .title-standart;
+        padding-left: 20rem;
+    }
+}
+
+.hobby, .biography, .main{
+    &__text{
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-left: 18rem;
+        text-align: center;
+    }
+}
+
+.footer{
+    background-color: #7B7B04;
+    padding-top: 30px;
+    margin-top: 90px;
+    &__title{
+        text-align: center;
+        color: antiquewhite;
+    }
+}
+
+.main{
+    padding-top: 60px;
+    height: 500px;
+    &__foto{
+        float: left;
+    }
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+  }
+  
+  thead th:nth-child(1) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  }
+  
+  th, td {
+    padding: 20px;
+  }
+  img{
+      width: 300px;
+      height: 300px;
+  }
+  .slider{
+      width: 300px;
+      height: 300px;
+      border: 2px solid black;
+      margin: 30px auto;
+      overflow: hidden;
+  }
+  .slider-line{
+      height: 300px;
+      width: 900px;
+      display: flex;
+      position: relative;
+      left: 0;
+      transition: all ease 1s;
+  }
+  .buttons{
+      margin-left: 700px;
+  }
+  .slider-next{
+      margin-left: 210px;
+  }
